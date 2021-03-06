@@ -47,7 +47,7 @@ li {
 .hero {
     height: 100vh;
     min-height: 650px;
-    background: url(/images/web-ready/bg/hero.jpg) center center / cover no-repeat;
+    background: url(./images/web-ready/bg/hero.jpg) center center / cover no-repeat;
     position: relative;
     margin-bottom: 130px;
 }
@@ -429,7 +429,7 @@ color: #212121;
     flex: 1;
     overflow: hidden;
     margin-right: 30px;
-    background: url(/images/web-ready/bg/pattern.png) center center / 100%;
+    background: url(./images/web-ready/bg/pattern.png) center center / 100%;
     position: relative;
 }
 
@@ -445,11 +445,11 @@ color: #212121;
 }
 
 .collections__item--type-guys:before {
-    background-image: url(/images/web-ready/collections/collection_man.png);
+    background-image: url(./images/web-ready/collections/collection_man.png);
 }
 
 .collections__item--type-girls:before {
-    background-image: url(/images/web-ready/collections/collection_woman.png);
+    background-image: url(./images/web-ready/collections/collection_woman.png);
     top: -31%;
     width: 80%;
     left: -25%;
@@ -580,7 +580,7 @@ color: #212121;
 
 .extras__col-socials {
     height: 100%;
-    background: url(/images/web-ready/bg/pattern.png) center center / 500px;
+    background: url(./images/web-ready/bg/pattern.png) center center / 500px;
     display: flex;
     align-items: center;
     justify-content: center;
