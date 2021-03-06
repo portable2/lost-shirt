@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Lost shirt | Main page</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -23,43 +23,103 @@
                         <div class="mail__title">По всем вопросам пишите на:</div>
                         <div class="mail__content">roma-sanya@yandex.ru</div>
                     </a>
-            </header>    
+                </header>    
                 <div class="hero__content">
-                    <div class="fade-slider">
-                        <div class="fade-slider__item">
+                    <ul class="fade-slider">
+                        <li class="fade-slider__item fade-slider__item--style-thirts fade-slider__item--visible">
                             <div class="fade-slider__text">
                                 <h1 class="lined-text">
-                                    <div class="lined-text__word">три</div>
-                                    <div class="lined-text__word">футболки</div>
-                                    <div class="lined-text__word lined-text__word--color-yellow">по цене</div>
-                                    <div class="lined-text__word lined-text__word--color-yellow">двух</div>
+                                    <span class="lined-text__word">три</span>
+                                    <span class="lined-text__word">футболки</span>
+                                    <span class="lined-text__word lined-text__word--color-yellow">по цене</span>
+                                    <span class="lined-text__word lined-text__word--color-yellow">двух</span>
                                 </h1>
                             </div>
-                        </div>
-                    </div>
-            </div>
+                        </li>
+                        <li class="fade-slider__item fade-slider__item--style-games">
+                            <div class="fade-slider__text">
+                                <h1 class="lined-text">
+                                    <span class="lined-text__word">Любимые игры</span>
+                                    <span class="lined-text__word lined-text__word--color-yellow">на лучших футболках</span>
+                                </h1>
+                            </div>
+                        </li>
+                        <li class="fade-slider__item fade-slider__item--style-presents">
+                            <div class="fade-slider__text">
+                                <h1 class="lined-text">
+                                    <span class="lined-text__word">Подарки</span>
+                                    <span class="lined-text__word lined-text__word--color-yellow">для любимых</span>
+                                </h1>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            <aside class="sidebar">
+                <a href="#" class="sidebar__hamburger">
+                    <svg class="sidebar__hamburger-icon">
+                        <use xlink:href="/images/web-ready/icons-sprite.svg#bars"></use>
+                    </svg>
+                </a>
+                <div class="sidebar__header">
+                    <a href="#" class="logo">
+                        <img src="/images/web-ready/content/logos/logo-main.png" alt="" class="logo__image">
+                    </a>
+                    <a href="#" class="sidebar__close">
+                        <svg class="sidebar__close-icon">
+                            <use xlink:href="/images/web-ready/icons-sprite.svg#cross"></use>
+                        </svg>
+                    </a>
+                </div>
+                <nav class="side-menu sidebar__menu">
+                    <ul class="side-menu__list">
+                        <li class="side-menu__item">
+                            <a href="#" class="side-menu__link">Детская коллекция</a>
+                        </li>
+                        <li class="side-menu__item">
+                            <a href="#" class="side-menu__link">Мужская коллекция</a>
+                        </li>
+                        <li class="side-menu__item">
+                            <a href="#" class="side-menu__link">Женская коллекция</a>
+                        </li>
+                        <li class="side-menu__item">
+                            <a href="#" class="side-menu__link">Популярные принты</a>
+                        </li>
+                        <li class="side-menu__item">
+                            <a href="#" class="side-menu__link">Новые принты</a>
+                        </li>
+                        <li class="side-menu__item">
+                            <a href="#" class="side-menu__link">Специальные предложения</a>
+                        </li>
+                        <li class="side-menu__item">
+                            <a href="#" class="side-menu__link">Скоро в продаже</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </aside>
+
             </section>   
         <section class="products">
             <div class="container">
                 <ul class="filter">
                     <li class="filter__item filter__item--active">
-                        <a href="#" class="filter__link">Популярное</a>
+                        <a href="#" data-filter="popular" class="filter__link">Популярное</a>
                     </li>
                     <li class="filter__item">
-                        <a href="#" class="filter__link">Новинки</a>
+                        <a href="#" data-filter="new" class="filter__link">Новинки</a>
                     </li>
                     <li class="filter__item">
-                        <a href="#" class="filter__link">Бестселлеры</a>
+                        <a href="#" data-filter="bestsellers" class="filter__link">Бестселлеры</a>
                     </li>
                     <li class="filter__item">
-                        <a href="#" class="filter__link">Специальные предложения</a>
+                        <a href="#" data-filter="specials" class="filter__link">Специальные предложения</a>
                     </li>
                     <li class="filter__item">
-                        <a href="#" class="filter__link">Скоро в продаже</a>
+                        <a href="#" data-filter="soon" class="filter__link">Скоро в продаже</a>
                     </li>
                 </ul>    
                 <ul class="products__list">
-                    <li class="products__item">
+                    <li class="products__item new bestsellers">
                         <div class="products__price">
                             <div class="products__price-amount">1800</div>
                         </div>
@@ -73,7 +133,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="products__item">
+                    <li class="products__item new specials soon">
                         <div class="products__price">
                             <div class="products__price-amount">1800</div>
                         </div>
@@ -87,7 +147,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="products__item products__item--color-black products__item--size-double">
+                    <li class="products__item new popular specials products__item--color-black products__item--size-double">
                         <div class="products__price">
                             <div class="products__price-amount">1800</div>
                         </div>
@@ -101,7 +161,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="products__item products__item--color-black products__item--size-double">
+                    <li class="products__item new popular soon products__item--color-black products__item--size-double">
                         <div class="products__price">
                             <div class="products__price-amount">1800</div>
                         </div>
@@ -115,7 +175,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="products__item">
+                    <li class="products__item new specials soon">
                         <div class="products__price">
                             <div class="products__price-amount">1800</div>
                         </div>
@@ -129,7 +189,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="products__item">
+                    <li class="products__item new">
                         <div class="products__price">
                             <div class="products__price-amount">1800</div>
                         </div>
@@ -326,6 +386,9 @@
             </div>
         </footer>
     </div>   
-
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>"></script>
+    <script src="/scripts/sidebar-menu.js"></script>
+    <script src="/scripts/fade-slider.js"></script>
+    <script src="/scripts/filter.js"></script>
 </body>
 </html>
