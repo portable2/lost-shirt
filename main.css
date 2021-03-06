@@ -162,6 +162,10 @@ li {
     background: var(--black);
 }
 
+.products {
+    margin-bottom: 160px;
+}
+
 .products__list {
     display: flex;
     flex-wrap: wrap;
@@ -270,4 +274,134 @@ color: #212121;
     position: absolute;
     top: 2px;
     right: 28px;
-{
+}
+
+.collections {
+    margin-bottom: 135px;
+}
+
+.collections__list {
+    display: flex;
+}
+
+.collections__item {
+    min-height: 474px;
+    flex: 1;
+    overflow: hidden;
+    margin-right: 30px;
+    background: url(/images/web-ready/bg/pattern.png) center center / 100%;
+    position: relative;
+}
+
+.collections__item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 176%;
+    width: 60%;
+    top: -17%;
+    left: -18%;
+    background: center center / contain no-repeat;
+}
+
+.collections__item--type-guys:before {
+    background-image: url(/images/web-ready/collections/collection_man.png);
+}
+
+.collections__item--type-girls:before {
+    background-image: url(/images/web-ready/collections/collection_woman.png);
+    top: -31%;
+    width: 80%;
+    left: -25%;
+}
+
+.collections__link {
+    display: inline-block;
+    padding: 74px 13% 74px 44%;
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.collections__link:hover .btn {
+    background: var(--red);
+    color: #fff;
+}
+
+.collections__title {
+    font-family: var(--titlesFont);
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 11px;
+}
+
+.collections__item:last-child {
+    margin-right: 0;
+}
+
+.collections__desc {
+    margin-bottom: 28px;
+}
+
+.footer {
+    margin-bottom: 115px;
+}
+
+.footer__container {
+    width: 1105px;
+}
+
+.site-menu__sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-menu__col {
+    margin-right: 20px;
+}
+
+.site-menu__col:last-child {
+    margin-right: 0px;
+}
+
+.site-menu__title {
+    font-family: var(--titlesFont);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.site-menu__item { /* hyi znaet kto prav */
+    margin-bottom: 15px;
+}
+
+.site-menu__link {
+    color: #737373;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.site-menu__link:hover {
+    color: var(--red);
+}
+
+.site-menu__text {
+    font-size: 15px;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+
+.site-menu__text-row {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
